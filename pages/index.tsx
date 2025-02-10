@@ -30,9 +30,9 @@ export default function Home() {
             <button className="w-full bg-green-400 text-black font-bold border-2 border-black px-4 py-2 rounded-md shadow-[4px_4px_0px_#000] hover:bg-green-600">
               Transfer
             </button>
-            <button className="w-full bg-red-400 text-black font-bold border-2 border-black px-4 py-2 rounded-md shadow-[4px_4px_0px_#000] hover:bg-red-600">
-              Report
-            </button>
+            <Link href="https://docs.google.com/spreadsheets/d/1_TkZ4zo8HvIABAx6eYFEW2l0805Z_hNxFbmvdkVOMKw/edit?usp=sharing" className="w-full text-center bg-yellow-400 text-black font-bold border-2 border-black px-4 py-2 rounded-md shadow-[4px_4px_0px_#000] hover:bg-yellow-600">
+              Details
+            </Link>
           </div>
         </div>
       </div>
