@@ -16,9 +16,9 @@ const Header = () => {
         <nav className="container mx-auto flex justify-between items-center px-6">
           <div className="flex items-center gap-0">
             {/* <Image src="/logo.png" alt="Logo" width={40} height={40} className="p-1 rounded-md" /> */}
-            <h1 className="text-4xl tracking-wide font-extrabold p-0 font-gothic">
+            <Link href="/" className="text-4xl tracking-wide font-extrabold p-0 font-gothic">
              <span className="text-black font-extrabold">West</span> Discovery
-            </h1>
+            </Link>
           </div>
           {/* Mobile Menu Button */}
           <button 
