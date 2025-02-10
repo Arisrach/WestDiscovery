@@ -6,7 +6,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="flex flex-col min-h-screen">
       <Head>
-        <title>My Website</title>
+        <title>West Discovery</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Header />
