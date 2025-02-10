@@ -1,0 +1,18 @@
+[
+    {
+      "tanggal": "2 Maret",
+      "jadwal": [
+        { "noRumah": "DC2-19", "nama": "Aris" },
+        { "noRumah": "DC2-20", "nama": "Budi" },
+        { "noRumah": "DC2-21", "nama": "Citra" }
+      ]
+    },
+    {
+      "tanggal": "3 Maret",
+      "jadwal": [
+        { "noRumah": "DC2-22", "nama": "Dewi" },
+        { "noRumah": "DC2-23", "nama": "Eko" }
+      ]
+    }
+  ]
+  

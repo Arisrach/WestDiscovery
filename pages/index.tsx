@@ -95,7 +95,7 @@ export default function Home() {
             {/* Ganti Tombol dengan Link */}
             {event.title === "Berbagi Berkah: Sedekah Takjil Ramadan" && (
               <Link
-                href="/" // Ganti dengan link tujuan
+                href="/jadwaltakjil" // Ganti dengan link tujuan
                 className="mt-2 w-full border-2 border-black bg-blue-500 text-white font-bold px-4 py-2 rounded-md shadow-[4px_4px_0px_#000] hover:bg-blue-700 text-center"
               >
                 Lihat Jadwal
