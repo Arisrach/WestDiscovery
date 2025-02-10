@@ -62,13 +62,16 @@ export default function GoogleSheetCards() {
             <Triangle size={16} className="fill-green-500 stroke-green-500 rotate-0" />
           </div>
         </div>
-          <div className="bg-white border-2 w-full border-black p-6 rounded-lg shadow-[8px_8px_0px_#000]">
-          <div className="flex items-center gap-2 text-red-600 font-bold">
-            <span>Rp {row[2].toLocaleString("id-ID")}</span>
-            <Triangle size={16} className="fill-red-500 stroke-red-500 rotate-180" />
+        {/* Card Uang Keluar (Hanya jika lebih dari 0) */}
+        {Number(row[2]) !== 0 && (
+              <div className="bg-white border-2 w-full border-black p-6 rounded-lg shadow-[8px_8px_0px_#000]">
+                <div className="flex items-center gap-2 text-red-600 font-bold">
+                  <span>Rp {Number(row[2]).toLocaleString("id-ID")}</span>
+                  <Triangle size={16} className="fill-red-500 stroke-red-500 rotate-180" />
+                </div>
+              </div>
+            )}
           </div>
-        </div>
-        </div>
         </div>
       ))}
     </div>
