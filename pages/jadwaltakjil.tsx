@@ -18,6 +18,7 @@ interface GoogleSheetRow {
 const JadwalTakjil: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [takjilSchedule, setTakjilSchedule] = useState<JadwalItem[]>([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     fetch(GOOGLE_SHEET_URL)
@@ -42,8 +43,12 @@ const JadwalTakjil: React.FC = () => {
         });
         
         setTakjilSchedule(parsedData);
+        setLoading(false);
       })
-      .catch(error => console.error("Error fetching data:", error));
+      .catch(error => {
+        console.error("Error fetching data:", error);
+        setLoading(false);
+      });
   }, []);
 
   const filteredSchedule = takjilSchedule.filter(item =>
@@ -57,7 +62,7 @@ const JadwalTakjil: React.FC = () => {
   return (
     <Layout>
     <div className="max-w-xl mx-auto">
-      <h2 className="text-xl border-2 border-black rounded-md shadow-[8px_8px_0px_#000] text-center mb-4 bg-yellow-400 px-2 py-1 font-bold font-gothic text-black max-w-[200px] ">Jadwal Takjil</h2>
+      <h2 className="text-xl border-2 border-black rounded-md shadow-[8px_8px_0px_#000] text-center mb-6 bg-yellow-400 px-2 py-1 font-bold font-gothic text-black max-w-[200px] ">Jadwal Takjil</h2>
       <div className="relative w-full">
         <Search className="absolute left-3 top-3 text-black" size={30} />
         <input
@@ -68,6 +73,9 @@ const JadwalTakjil: React.FC = () => {
           onChange={(e) => setSearchTerm(e.target.value)}
         />
       </div>
+      {loading ? (
+        <p className="text-center text-black font-bold">Loading...</p>
+      ) : (
       <table className="w-full rounded-md border-collapse text-left border-2 border-black">
         <thead>
           <tr className="bg-black text-white">
@@ -94,6 +102,7 @@ const JadwalTakjil: React.FC = () => {
           ))}
         </tbody>
       </table>
+          )}
     </div>
     </Layout>
   );
