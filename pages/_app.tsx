@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>West Discovery</title>
-        <meta name="description" content="Deskripsi website saya di sini." />
+        <meta name="description" content="✨ Tetap Update Info Keuangan & Acara di Discovery Barat! 💸🎊 Pengen tahu update soal keuangan dan acara seru di Discovery Barat? Yuk, cek website! Semua info penting ada di satu tempat, biar gak ketinggalan." />
       </Head>
       <Component {...pageProps} />
     </>
