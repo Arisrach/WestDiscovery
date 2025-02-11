@@ -14,6 +14,7 @@ const config: Config = {
         cursive: ['Yellowtail'],
         calistoga: ['Calistoga'],
         gothic: ['Germania One'],
+        playfair: ["Playfair Display", "serif"],
       },
       colors: {
         background: "var(--background)",

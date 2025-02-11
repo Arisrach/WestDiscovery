@@ -4,6 +4,7 @@ import GoogleSheetMain from "../components/GoogleSheetMain";
 import GoogleSheetMusala from "../components/GoogleSheetMusala";
 import Link from "next/link";
 import Image from "next/image";
+import { ArrowRight } from "lucide-react";
 
 const events = [
   {
@@ -74,6 +75,27 @@ export default function Home() {
 
   return (
     <Layout>
+      <div className="relative w-full max-w-2xl mx-auto mt-5 mb-5 p-6 border-2 border-black rounded-md shadow-[8px_8px_0px_#000] bg-yellow-400 flex items-center">
+      <div className="flex-1">
+        <h2 className="text-xl text-gray-800">Cek <span className="font-bold">jadwal<br></br>takjil</span> mu!</h2>
+        <div className="mt-4">
+          <Link href="/jadwaltakjil">
+            <div className="px-6 py-1 w-2/6 text-lg flex items-center justify-center gap-2 bg-blue-600 font-bold text-white border-2 border-black rounded-md shadow-[8px_8px_0px_#000] hover:bg-blue-700">
+              Lihat
+            </div>
+          </Link>
+        </div>
+      </div>
+      <div className="absolute bottom-0 right-0 md:w-40 lg:w-48">
+        <Image 
+          src="/artamal.png" 
+          alt="Orang menyiapkan takjil" 
+          width={200} 
+          height={200} 
+          className="object-cover"
+        />
+      </div>
+    </div>
       {/* Tab Bar */}
       <div className="w-full flex space-x-2 mb-6">
         {["event", "balance"].map((tab) => (
@@ -103,13 +125,13 @@ export default function Home() {
       {events.map((event, index) => (
         <div key={index} className="w-full border-2 border-black rounded-md shadow-[8px_8px_0px_#000] bg-white overflow-hidden">
           <div className="p-4 flex flex-col gap-2">
-            <Image
+            {/* <Image
               src={event.image}
               alt="Event Image"
               width={300}
               height={200}
               className="rounded-lg object-cover w-full"
-            />
+            /> */}
             <h3 className="text-sm font-bold text-gray-700">{event.title}</h3>
             <p className="text-sm text-gray-700">{event.description}</p>
             {event.time !== "-" && (

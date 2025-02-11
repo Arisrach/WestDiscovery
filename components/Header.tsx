@@ -14,6 +14,7 @@ const Header = () => {
         <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Germania+One&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet"/>
         <nav className="container mx-auto flex justify-between items-center px-6">
           <div className="flex items-center gap-0">
             {/* <Image src="/logo.png" alt="Logo" width={40} height={40} className="p-1 rounded-md" /> */}
