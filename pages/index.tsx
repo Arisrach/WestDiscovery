@@ -7,23 +7,42 @@ import Image from "next/image";
 
 const events = [
   {
+    date: "16 feb",
+    image: "/kebun.jpg",
+    title: "Gotong Royong Warga: Bersih, Rapi, dan Nyaman",
+    description:
+      "Saatnya bersatu! Mari ikut kerja bakti bersama warga untuk lingkungan yang lebih bersih, sehat, dan nyaman bagi kita semua.",
+    time: "07:00",
+  },
+  {
+    date: "16 feb",
+    image: "/poplin.jpg",
+    title: "Alhamdulillah! Poplin Dukung Musala Kita",
+    description:
+      "kegiatan dari team poplin pembersihan musola kita dan dukung musala kita semoga membawa manfaat bagi banyak orang!",
+    time: "-",
+  },
+  {
     date: "1 - 28 Mar",
     image: "/mengaji.png",
     title: "Malam Penuh Berkah: Tadarus Bersama",
     description:
       "Raih pahala dan ketenangan hati dengan tadarus Al-Qur’an. Mari mendekatkan diri kepada Allah di bulan suci ini!",
+    time: "-",
   },
   {
     date: "1 - 28 Mar",
     image: "/ibadah.webp",
     title: "Cahaya Ramadan: Tarawih Berjamaah",
     description: "Jadikan malam Ramadan lebih bermakna dengan mendirikan shalat tarawih. Yuk, bersama-sama meraih keberkahan!",
+    time: "-",
   },
   {
     date: "1 - 28 Mar",
     image: "/kurmaj.webp",
     title: "Berbagi Berkah: Sedekah Takjil Ramadan",
     description: "Mari tebarkan kebaikan dengan berbagi takjil untuk saudara kita yang berpuasa. Satu kebaikan kecil, pahala berlipat ganda!",
+    time: "-",
   },
   {
     date: "8 Mar",
@@ -31,6 +50,7 @@ const events = [
     title: "Buka Bersama & Kajian: Meraih Berkah Ramadan",
     description:
       "Nikmati kebersamaan dalam buka puasa bersama dan kajian inspiratif bersama Ustad Hasan.",
+    time: "16:00",
   },
   {
     date: "22 Mar",
@@ -38,6 +58,7 @@ const events = [
     title: "Berkah Ramadan: Buka Bersama & Kajian Spesial",
     description:
       "Jangan lewatkan kesempatan emas untuk berbuka bersama dan menyimak kajian penuh hikmah dari Ustad Hasan.",
+    time: "16:00",
   },
 ];
 
@@ -91,7 +112,9 @@ export default function Home() {
             />
             <h3 className="text-sm font-bold text-gray-700">{event.title}</h3>
             <p className="text-sm text-gray-700">{event.description}</p>
-
+            {event.time !== "-" && (
+            <div className="text-sm text-white font-bold bg-black py-1 w-3/6 text-center rounded-full">Jam : {event.time}</div>
+            )}
             {/* Ganti Tombol dengan Link */}
             {event.title === "Berbagi Berkah: Sedekah Takjil Ramadan" && (
               <Link
