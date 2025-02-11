@@ -41,6 +41,7 @@ const Header = () => {
               className="bg-blue-500 mt-4 text-white text-sm font-extrabold text-center py-0 border-2 border-black rounded-md mx-4 shadow-[4px_4px_0px_#000]"
             >
               <Link href="/" className="block py-2 border-b-2 border-black hover:bg-blue-800">Home</Link>
+              <Link href="/jadwaltakjil" className="block py-2 border-b-2 border-black hover:bg-blue-800">Jadwal Takjil</Link>
               <Link href="/about" className="block py-2 border-b-2 border-black hover:bg-blue-800">About</Link>
               <Link href="/contact" className="block py-2 hover:bg-blue-800">Contact</Link>
             </motion.div>
