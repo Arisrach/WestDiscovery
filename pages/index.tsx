@@ -12,7 +12,7 @@ const events = [
     image: "/kebun.jpg",
     title: "Malam Nisfu Sya'ban",
     description:
-      "Mari manfaatkan malam istimewa ini dengan doa, dzikir, dan ibadah. Semoga Allah melimpahkan rahmat dan keberkahan bagi kita semua!",
+      "Mari manfaatkan malam istimewa ini Dipimpin Bpk. Novan & Ust. Hasan dengan doa, dzikir, dan ibadah. Semoga Allah melimpahkan rahmat dan keberkahan bagi kita semua!",
     time: "18:00",
   },
   {
