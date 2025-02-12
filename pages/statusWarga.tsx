@@ -1,6 +1,11 @@
 import { useEffect, useState } from "react";
 import { DataStatusWarga } from "@/lib/getDataStatusWarga";
-import { fetchStatusTotalData } from "@/lib/getDataStatusTotalWarga";
+import PenghuniTetapCard from "../components/penghuniTetapCard";
+import PenghuniKontrakCard from "../components/penghuniKontrakCard";
+import PenghuniSinggahCard from "../components/penghuniSinggahCard";
+import PenghuniBelumCard from "../components/penghuniBelumCard";
+import PenghuniTidakCard from "../components/penghuniTidakCard";
+import PenghuniTotalWargaCard from "../components/penghuniTotalWargaCard";
 import Layout from "../components/Layout";
 import { Search } from 'lucide-react';
 
@@ -33,6 +38,18 @@ export default function StatusWarga() {
 
   return (
     <Layout>
+      <div className="grid grid-cols-1 sm:grid-cols-1 gap-6 px-0 mb-4">
+      <PenghuniTotalWargaCard />
+      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 px-0 mb-4">
+      <PenghuniTetapCard />
+      <PenghuniKontrakCard />
+      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 px-0 mb-4">
+      <PenghuniSinggahCard />
+      <PenghuniBelumCard />
+      <PenghuniTidakCard />
+      </div>
       <h2 className="text-xl border-2 border-black rounded-md shadow-[8px_8px_0px_#000] text-center mb-2 bg-yellow-400 px-2 py-1 font-bold font-gothic text-black max-w-[200px]">
         Status Warga
       </h2>
