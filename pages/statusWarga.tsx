@@ -38,14 +38,12 @@ export default function StatusWarga() {
 
   return (
     <Layout>
-      <div className="grid grid-cols-1 sm:grid-cols-1 gap-6 px-0 mb-4">
+      <div className="grid grid-cols-1 sm:grid-cols-1 gap-6 px-0 mb-5">
       <PenghuniTotalWargaCard />
-      </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 px-0 mb-4">
       <PenghuniTetapCard />
-      <PenghuniKontrakCard />
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 px-0 mb-4">
+      <div className="grid grid-cols-2 sm:grid-cols-2 gap-6 px-0 mb-6">
+      <PenghuniKontrakCard />
       <PenghuniSinggahCard />
       <PenghuniBelumCard />
       <PenghuniTidakCard />
