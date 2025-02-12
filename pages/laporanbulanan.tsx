@@ -34,7 +34,7 @@ export default function PaymentsPage() {
       <h2 className="text-xl border-2 border-black rounded-md shadow-[8px_8px_0px_#000] text-center mb-2 bg-yellow-400 px-2 py-1 font-bold font-gothic text-black max-w-[200px]">
         Iuran Bulanan
       </h2>
-      <div className="p-4">
+      <div className="mt-5">
       <div className="relative w-full">
         <Search className="absolute left-3 top-3 text-black" size={30} />
         <input
