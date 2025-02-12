@@ -5,7 +5,7 @@ const SHEET_ID = "11IR_tvKKpxjYS7QMEANMVlFGHjEQgyzEGlm_EcZhy48";
 const SHEET_NAME = "Sheet1";
 const URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv&sheet=${SHEET_NAME}`;
 
-export default function penghuniTotalWargaCard() {
+export default function PenghuniTotalWargaCard() {
   const [value, setValue] = useState<string | null>(null);
 
   useEffect(() => {
