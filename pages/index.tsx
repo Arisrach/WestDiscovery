@@ -8,6 +8,14 @@ import { ArrowRight } from "lucide-react";
 
 const events = [
   {
+    date: "13 feb",
+    image: "/kebun.jpg",
+    title: "Malam Nisfu Sya'ban",
+    description:
+      "Mari manfaatkan malam istimewa ini dengan doa, dzikir, dan ibadah. Semoga Allah melimpahkan rahmat dan keberkahan bagi kita semua!",
+    time: "18:00",
+  },
+  {
     date: "16 feb",
     image: "/kebun.jpg",
     title: "Gotong Royong Warga: Bersih, Rapi, dan Nyaman",
