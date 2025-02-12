@@ -44,8 +44,9 @@ const Header = () => {
               <Link href="/" className="block py-2 border-b-2 border-black hover:bg-blue-800">Home</Link>
               <Link href="/jadwaltakjil" className="block py-2 border-b-2 border-black hover:bg-blue-800">Jadwal Takjil</Link>
               <Link href="/laporanbulanan" className="block py-2 border-b-2 border-black hover:bg-blue-800">Iuran bulanan</Link>
-              <Link href="/about" className="block py-2 border-b-2 border-black hover:bg-blue-800">About</Link>
-              <Link href="/contact" className="block py-2 hover:bg-blue-800">Contact</Link>
+              {/* <Link href="/statusWarga" className="block py-2 border-b-2 border-black hover:bg-blue-800">Status Warga</Link> */}
+              {/* <Link href="/about" className="block py-2 border-b-2 border-black hover:bg-blue-800">About</Link>
+              <Link href="/contact" className="block py-2 hover:bg-blue-800">Contact</Link> */}
             </motion.div>
           )}
         </AnimatePresence>
